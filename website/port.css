@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    border: 0cap;
+    scroll-behavior: smooth;
+}
+body{
+    background:black;
+    color:white;
+}
+.header{
+    position:relative;
+    top: 0;
+    left: 0%;
+    right: 100%;
+    width:100%;
+    padding: 32px 9%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 42px;
+    font-weight: 600;
+    color: rgb(10, 90, 108);
+}
+.navbar a{
+    font-size: 22px;
+    color:rgb(10, 90, 108) ;
+    font-weight: 500;
+   margin-left: 56px ;
+   transition: 2s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(10, 90, 108);
+}
+#menu-icon{
+     font-size: 57.6px;
+     color: rgb(10, 90, 108);
+     cursor: pointer;
+     display: none;
+}
+section{
+    min-height: 100vh;
+    padding: 160px 9% 32px;
+}
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: url('../website/port.jpg');
+    background-size:40%;
+    background-position:88%;
+    background-repeat: no-repeat;
+}
+.homecontent{
+    max-width:960px;
+}
+.homecontent h1{
+    font-size:58px ;
+    font-weight: 700;
+    line-height:1.3 ;
+}
+.homecontent .textanimated{
+   position: relative; 
+   width:524.8px ;
+}
+.homecontent .textanimated h3{
+    font-size:40px;
+    font-weight:700;
+    color:red;
+}
+.homecontent p{
+    font-size:24px ;
+    margin: 32px 0 64px;
+}
+.btnbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height:5rem;
+}
+.btnbox .btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:15rem;
+    height:100%;
+    background: rgb(10, 90, 108);
+    border:.2rem solid;
+    border-radius:.8rem;
+    border-color: rgb(10, 90, 108);
+    color:rgb(10, 90, 108);
+    font-size:18.8px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    color: rgb(130, 138, 50);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btnbox .btn:hover::before{
+    width: 100%;
+}
+.home-sci{
+    position: absolute;
+    bottom: 64px;
+    width: 170px;
+    display: flex;
+    justify-content:space-between;
+}
+.home-sci a{
+  position: relative;  
+  display: inline-flex;
+  justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border:.2rem solid;
+    border-radius: 50%;
+    border-color: rgb(10, 90, 108);
+    font-size: 20px;
+    color: rgb(10, 90, 108);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.home-sci a:hover::before{
+    width:100%;
+}
+.home-imgMe{
+    position: absolute;
+    top:10%;
+    right:0;
+    width:40%;
+    height:100%;
+    border:2px solid;
+    border-color:transparent;
+}
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    background: black;
+   padding-bottom:6rem; 
+}
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+span{
+    color: rgb(10, 90, 108);
+}
+.aboutimg{
+    position: relative;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutimg img{
+    width: 70%;
+    border-radius: 50%;
+    border:.2rem solid;
+    border-color: rgb(10, 90, 108);
+    transform: translate(-30%, -30%);
+}
+.aboutcontent{
+    text-align: center;
+}
+.aboutcontent h3{
+    font-size: 2.6rem;
+}
+.aboutcontent p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.skills{
+    min-height: auto;
+    padding-bottom: 7rem;
+    background:black;
+    
+}
+.skills h3{
+    margin-bottom: 3rem;
+}
+.skills .skillsrow{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 2rem;
+}
+.skillsrow .skillscolumn{
+    flex: 1 1 40rem;
+}
+.skillscolumn .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.skillsbox .skillscontent{
+    position: relative;
+    border: .2rem solid;
+    border-color: rgb(10, 90, 108);
+    border-radius: 2rem;
+    padding: .5rem 1.5rem;
+    max-width: fit-content;
+}
+.skillscontent .progress{
+    padding: 1px;
+}
+.skillscontent .progress h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skillscontent .progress h3 span{
+    color: white;
+}
+.contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+.contact form{
+    max-width: 78rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .inputbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .inputbox .inputfield{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+.contact form .inputbox .inputfield input,
+.contact form .textareafield textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background:rgb(10, 90, 108);
+    border-radius: .6rem;
+    border: .2rem;
+}
+.contact form .inputbox .inputfield input::placeholder,
+.contact form .textareafield textarea::placeholder{
+    color: white;
+}
+.contact form .textareafield{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textareafield textarea{
+    resize: none;
+}
+.btn{
+    color: rgb(10, 90, 108);
+}
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+    .header{
+        padding:2rem 4% ;
+    }
+    .home{
+        padding: 0 4%;
+    }
+}
+@media(max-width:768px){
+    .header{
+        background:black;
+    }
+    #menu-icon{
+        display: block;
+    }
+}
+@media(max-width:521px){
+html{
+    font-size:50%;
+}
+.homecontent h1{
+    display: flex;
+    flex-direction: column;
+}
+.home p{
+    font-size:20px;
+}
+.home-sci a{
+    width: 38px;
+    height: 38px;
+}
+}
+@media(max-width:371px){
+    .home{
+        justify-content: center;
+    }
+    .homecontent{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .homecontent h1{
+        font-size: 3rem;
+
+    }
+}
